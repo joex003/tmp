@@ -31,5 +31,6 @@ return [
     'login_here' => 'سجّل دخولك من هنا',
     'create_new_employee' => 'إنشاء موظف جديد',
     'login' => 'تسجيل الدخول',
+    'allemployees' => 'جميع الموظفين'
 
 ];

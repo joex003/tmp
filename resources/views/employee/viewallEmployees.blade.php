@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <h2 class="mb-4">All Employees</h2>
+    <h2 class="mb-4">{{ __('messages.allemployees') }}</h2>
 
     @if($employees->isEmpty())
         <p>No employees found.</p>

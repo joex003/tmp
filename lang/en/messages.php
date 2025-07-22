@@ -31,6 +31,7 @@ return [
     'login_here' => 'Login Here',
     'create_new_employee' => 'Create New Employee',
     'login' => 'Login',
+    'allemployees' => 'All Employees'
 
 
 ];
