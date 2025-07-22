@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <h2 class="mb-3">Update Your Info</h2>
+    <h2 class="mb-3">{{ __('messages.update_info_title') }}</h2>
 
     @if (session('success'))
         <div class="alert alert-success">
@@ -24,7 +24,7 @@
         @method("PUT")
 
         <div class="mb-3">
-            <label for="name" class="form-label">Name:</label>
+            <label for="name" class="form-label">{{ __('messages.name') }}:</label>
             <input type="text" name="name" id="name" class="form-control" value="{{ old('name', auth()->user()->name) }}"
                 required>
             @error('name')
@@ -33,7 +33,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
+            <label for="email" class="form-label">{{ __('messages.email') }}:</label>
             <input type="email" name="email" id="email" class="form-control"
                 value="{{ old('email', auth()->user()->email) }}" required>
             @error('email')
@@ -41,6 +41,6 @@
             @enderror
         </div>
 
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">{{ __('messages.update') }}</button>
     </form>
 @endsection

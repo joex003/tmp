@@ -37,6 +37,7 @@ class EmployeeController extends Controller
         try {
             $validated = $request->validated();
             $result = $this->createEmployee->create($validated, true);
+            Auth::login($result['employee']);
 
             if ($request->wantsJson()) {
                 return response()->json([

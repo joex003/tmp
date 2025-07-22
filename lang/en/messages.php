@@ -16,4 +16,21 @@ return [
     'invalid_credentials' => 'Please provide correct credentials',
     'registration_success' => 'Employee registered successfully',
     'registration_failed' => 'Registration failed',
+    'update_info' => 'Update Info',
+    'view_employees' => 'View Employees',
+    'delete_account' => 'Delete Account',
+    'logout' => 'Logout',
+    'confirm_delete' => 'Are you sure you want to delete your account?',
+    'update_info_title' => 'Update Your Info',
+    'name' => 'Name',
+    'email' => 'Email',
+    'update' => 'Update',
+    'password' => 'Password',
+    'register' => 'Register',
+    'already_have_account' => 'Already have an account?',
+    'login_here' => 'Login Here',
+    'create_new_employee' => 'Create New Employee',
+    'login' => 'Login',
+
+
 ];

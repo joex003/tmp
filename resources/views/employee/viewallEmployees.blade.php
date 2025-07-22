@@ -9,8 +9,8 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
+                    <th>{{ __('messages.name') }}</th>
+                    <th>{{ __('messages.email') }}</th>
                 </tr>
             </thead>
             <tbody>
