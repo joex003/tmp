@@ -6,7 +6,7 @@ use Tests\TestCase;
 use App\Models\Employee;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Mail\signUp;
+use App\Mail\SignUp;
 
 class RegisterEmployeeWebFeatureTest extends TestCase
 {
@@ -31,7 +31,7 @@ class RegisterEmployeeWebFeatureTest extends TestCase
             'email' => $payload['email'],
         ]);
 
-        Mail::assertSent(signUp::class);
+        Mail::assertSent(SignUp::class);
     }
 
 }

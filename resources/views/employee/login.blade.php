@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.Layout')
 
 @section('content')
     <h2 class="mb-2">{{ __('messages.login') }}</h2>

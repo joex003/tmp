@@ -7,7 +7,7 @@ use App\Models\Employee;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tymon\JWTAuth\Facades\JWTAuth;
-use App\Mail\signUp;
+use App\Mail\SignUp;
 
 class RegisterEmployeeFeatureTest extends TestCase
 {
@@ -44,6 +44,6 @@ class RegisterEmployeeFeatureTest extends TestCase
             'email' => 'youssef@example.com'
         ]);
 
-        Mail::assertSent(signUp::class);
+        Mail::assertSent(SignUp::class);
     }
 }

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.Layout')
 
 @section('content')
     <h2 class="mb-3">{{ __('messages.update_info_title') }}</h2>

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.Layout')
 
 @section('content')
     <h2 class="mb-2">{{ __('messages.create_new_employee') }}</h2>
@@ -13,6 +13,9 @@
         <div class="mb-3">
             <label for="email" class="form-label">{{ __('messages.email') }}:</label>
             <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}" required>
+            @error('email')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="mb-3">

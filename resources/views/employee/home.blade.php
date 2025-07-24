@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.Layout')
 
 @section('content')
     <h2 class="mb-4">{{ __('messages.welcome', ['name' => auth()->user()->name]) }}</h2>

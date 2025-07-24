@@ -3,23 +3,19 @@
 namespace App\Services;
 
 use App\Models\Employee;
-use App\Exceptions\Custom;
+use App\Exceptions\CustomException;
 use Exception;
+use Symfony\Component\HttpFoundation\Response;
 
 class DeleteEmployee
 {
     public function delete(): void
     {
-        $employee = auth()->user();
-
-        if (!$employee) {
-            throw new Custom(__('messages.employee_not_found'), 404);
-        }
-
         try {
+            $employee = auth()->user();
             $employee->delete();
         } catch (Exception $e) {
-            throw new Custom(__('messages.deletion_failed'), 500);
+            throw new CustomException(__('messages.deletion_failed'), Response::HTTP_INTERNAL_SERVER_ERROR);
         }
     }
 }

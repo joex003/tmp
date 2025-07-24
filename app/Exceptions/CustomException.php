@@ -4,7 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 
-class Custom extends Exception
+class CustomException extends Exception
 {
     //
     public function __construct($message = "", $code = 500)
